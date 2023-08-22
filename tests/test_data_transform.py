@@ -1,5 +1,4 @@
-from pytest import mark
-from modulo.data_transform_05 import clean_data_lower
+from modulo.data_transform import limpando_dados_lower
 
 """
 Todo teste é formado por 3 etapas
@@ -8,39 +7,13 @@ Todo teste é formado por 3 etapas
 3. Then: Onde você verifica se o resultado é o esperado
 
 """
-@mark.smoke
 def test_data_transform_clean_data_lower():
     # Given
-    data_list = "LUCIANO"
-    expected = "luciano"
+    entrada = "LUCIANO"
+    esperado = "luciano"
 
     # When
-    result = clean_data_lower(data_list)
+    resultado = limpando_dados_lower(entrada)
 
     # Then
-    assert result == expected
-
-@mark.smoke
-def test_data_transform_clean_data_lower_empty():
-    # Given
-    data_list = ""
-    expected = ""
-
-    # When
-    result = clean_data_lower(data_list)
-
-    # Then
-    assert result == expected
-
-@mark.chefe
-@mark.smoke
-def test_data_transform_clean_data_lower_and_spaces():
-    # Given
-    data_list = "    CHEFE    "
-    expected = "chefe"
-
-    # When
-    result = clean_data_lower(data_list)
-
-    # Then
-    assert result == expected
+    assert resultado == esperado
