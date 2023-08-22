@@ -17,3 +17,14 @@ def load_into_txt_file_as_append(pokemon_name):
     """Carrega o nome do Pokemon em um arquivo txt"""
     with open("pokemon.txt", "a") as file:
         file.write(pokemon_name + "\n")
+
+        def test_data_transform_clean_data_lower_and_spaces():
+    # Given
+    data_list = "    PyTest    "
+    expected = "pytest"
+
+    # When
+    result = clean_data_lower(data_list)
+
+    # Then
+    assert result == expected
