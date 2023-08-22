@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dataeng-pytest-cookbook"
+version = "0.1.0"
+description = ""
+authors = ["Luciano Filho <lvgalvaofilho@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dataeng_pytest_cookbook"}]
+
+[tool.poetry.dependencies]
+python = "3.11.3"
+pytest = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
