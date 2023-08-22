@@ -1,4 +1,4 @@
-from modulo.data_transform import limpando_dados_lower
+from src.data_transform import clean_data_lowe
 
 """
 Todo teste é formado por 3 etapas
@@ -9,8 +9,19 @@ Todo teste é formado por 3 etapas
 """
 def test_data_transform_clean_data_lower():
     # Given
-    entrada = "LUCIANO"
-    esperado = "luciano"
+    entrada = "PYTHON"
+    esperado = "python"
+
+    # When
+    resultado = limpando_dados_lower(entrada)
+
+    # Then
+    assert resultado == esperado
+
+def test_data_transform_clean_data_lower_com_espacos():
+    # Given
+    entrada = "   HELLO WORLD   "
+    esperado = "hello world"
 
     # When
     resultado = limpando_dados_lower(entrada)
