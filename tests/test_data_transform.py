@@ -1,5 +1,5 @@
 from pytest import mark
-from src.data_transform_05 import clean_data_lower
+from modulo.data_transform_05 import clean_data_lower
 
 """
 Todo teste é formado por 3 etapas
