@@ -9,6 +9,7 @@ packages = [{include = "dataeng_pytest_cookbook"}]
 [tool.poetry.dependencies]
 python = "3.11.3"
 pytest = "^7.4.0"
+requests = "^2.31.0"
 
 
 [build-system]
