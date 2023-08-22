@@ -5,7 +5,7 @@ def test_data_transform_clean_data_lower():
     entrada = "PYTHON"
     esperado = "python"
     # When
-    resultado = clean_data_lowe(entrada)
+    resultado = clean_data_lower(entrada)
     # Then
     assert resultado == esperado
 
@@ -14,6 +14,6 @@ def test_data_transform_clean_data_lower_com_espacos():
     entrada = "   HELLO WORLD   "
     esperado = "hello world"
     # When
-    resultado = clean_data_lowe(entrada)
+    resultado = clean_data_lower(entrada)
     # Then
     assert resultado == esperado
